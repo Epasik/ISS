@@ -1,0 +1,272 @@
+openapi: 3.0.0
+info:
+  title: Музыкальная бибилотека API
+  description: API для управления плейлистами и треками в музыкальной бибилотеке
+  version: 1.0.0
+servers:
+- url: /
+tags:
+- name: playlists
+  description: Управление плейлистами и треками
+paths:
+  /playlists:
+    get:
+      tags:
+      - playlists
+      summary: Получить все плейлисты
+      operationId: playlists_get
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              example: |
+                [
+                  {"id": 1, "name": "Favorites"},
+                  {"id": 2, "name": "Party Mix"}
+                ]
+      x-openapi-router-controller: swagger_server.controllers.playlists_controller
+    post:
+      tags:
+      - playlists
+      summary: Создать новый плейлист
+      operationId: playlists_post
+      requestBody:
+        content:
+          application/json:
+            example:
+              name: Workout
+      responses:
+        "201":
+          description: Playlist created successfully
+          content:
+            application/json:
+              example:
+                id: 3
+                name: Workout
+      x-openapi-router-controller: swagger_server.controllers.playlists_controller
+  /playlists/{playlistId}:
+    get:
+      tags:
+      - playlists
+      summary: Получить плейлист по ID
+      operationId: playlists_playlist_id_get
+      parameters:
+      - name: playlistId
+        in: path
+        description: ID of the playlist
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              example:
+                id: 1
+                name: Favorites
+                tracks:
+                - id: 101
+                  title: Song 1
+                - id: 102
+                  title: Song 2
+      x-openapi-router-controller: swagger_server.controllers.playlists_controller
+    put:
+      tags:
+      - playlists
+      summary: Обновить плейлист по ID
+      operationId: playlists_playlist_id_put
+      parameters:
+      - name: playlistId
+        in: path
+        description: ID of the playlist
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      requestBody:
+        content:
+          application/json:
+            example:
+              name: Favorites Updated
+      responses:
+        "200":
+          description: Playlist updated successfully
+          content:
+            application/json:
+              example:
+                id: 1
+                name: Favorites Updated
+      x-openapi-router-controller: swagger_server.controllers.playlists_controller
+    delete:
+      tags:
+      - playlists
+      summary: Удалить плейлист по ID
+      operationId: playlists_playlist_id_delete
+      parameters:
+      - name: playlistId
+        in: path
+        description: ID of the playlist
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      responses:
+        "204":
+          description: Playlist deleted successfully
+      x-openapi-router-controller: swagger_server.controllers.playlists_controller
+  /playlists/{playlistId}/tracks:
+    get:
+      tags:
+      - playlists
+      summary: Получить все треки в плейлисте
+      operationId: playlists_playlist_id_tracks_get
+      parameters:
+      - name: playlistId
+        in: path
+        description: ID of the playlist
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              example:
+              - id: 101
+                title: Song 1
+              - id: 102
+                title: Song 2
+      x-openapi-router-controller: swagger_server.controllers.playlists_controller
+    post:
+      tags:
+      - playlists
+      summary: Добавить новый трек в плейлист
+      operationId: playlists_playlist_id_tracks_post
+      parameters:
+      - name: playlistId
+        in: path
+        description: ID of the playlist
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      requestBody:
+        content:
+          application/json:
+            example:
+              title: New Song
+      responses:
+        "201":
+          description: Track added successfully
+          content:
+            application/json:
+              example:
+                id: 103
+                title: New Song
+      x-openapi-router-controller: swagger_server.controllers.playlists_controller
+  /playlists/{playlistId}/tracks/{trackId}:
+    get:
+      tags:
+      - playlists
+      summary: Получить трек по ID
+      operationId: playlists_playlist_id_tracks_track_id_get
+      parameters:
+      - name: playlistId
+        in: path
+        description: ID of the playlist
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      - name: trackId
+        in: path
+        description: ID of the track
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              example:
+                id: 101
+                title: Song 1
+      x-openapi-router-controller: swagger_server.controllers.playlists_controller
+    put:
+      tags:
+      - playlists
+      summary: Обновить трек по ID
+      operationId: playlists_playlist_id_tracks_track_id_put
+      parameters:
+      - name: playlistId
+        in: path
+        description: ID of the playlist
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      - name: trackId
+        in: path
+        description: ID of the track
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      requestBody:
+        content:
+          application/json:
+            example:
+              title: Song 1 Updated
+      responses:
+        "200":
+          description: Track updated successfully
+          content:
+            application/json:
+              example:
+                id: 101
+                title: Song 1 Updated
+      x-openapi-router-controller: swagger_server.controllers.playlists_controller
+    delete:
+      tags:
+      - playlists
+      summary: Удалить трек по ID
+      operationId: playlists_playlist_id_tracks_track_id_delete
+      parameters:
+      - name: playlistId
+        in: path
+        description: ID of the playlist
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      - name: trackId
+        in: path
+        description: ID of the track
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      responses:
+        "204":
+          description: Track deleted successfully
+      x-openapi-router-controller: swagger_server.controllers.playlists_controller
+components: {}
+

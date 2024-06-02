@@ -1,0 +1,21 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'vmagent'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['vmagent:8429']
+  - job_name: 'victoriametrics'
+    static_configs:
+      - targets: ['victoriametrics:8428']
+  - job_name: 'Playlist-api'
+    static_configs:
+      - targets: [ '192.168.1.101:8080' ]  # Замените 'movies-api' на адрес вашего приложения, где запущен Movies API
+  - job_name: 'loki'
+    static_configs:
+      - targets: [ '192.168.1.101:3100' ]
+  - job_name: 'tempo'
+    static_configs:
+      - targets: [ 'tempo:9411' ]
+
