@@ -7,7 +7,7 @@ from pprint import pprint
 # create an instance of the API class
 #api_instance = swagger_client.PlaylistsApi(swagger_client.ApiClient(configuration))
 configuration = swagger_client.Configuration()
-configuration.host = '172.30.208.1:8080'
+configuration.host = '127.0.0.1:8080'
 api_client = swagger_client.ApiClient(configuration=configuration)
 api_instance = swagger_client.PlaylistsApi(api_client=api_client)
 
