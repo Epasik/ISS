@@ -42,7 +42,7 @@ jobs:
     - name: Run Client
       run: |
         cd python-client-generated
-        python start.py
+        python ./start.py
 
 # name: Swagger Server
 
