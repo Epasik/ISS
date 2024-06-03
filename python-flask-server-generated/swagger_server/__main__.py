@@ -18,7 +18,7 @@ def main():
     # Обновляем значение счетчика в соответствии с переменной count из playlists_controller
     playlist_count_metric.set_function(lambda: playlists_controller.playlist_count)
 
-    logging.basicConfig(filename='C:/ServerFlask/python-flask-server-generated/var/log/new.log', level=logging.INFO)
+    logging.basicConfig(filename='./var/log/new.log', level=logging.INFO)
 
     app.app.json_encoder = encoder.JSONEncoder
     app.add_api('swagger.yaml', arguments={'title': 'Музыкальная бибилотека API'}, pythonic_params=True)
