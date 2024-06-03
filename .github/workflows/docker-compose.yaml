@@ -19,7 +19,10 @@ jobs:
         pwd
         
     - name: Build the Docker Compose stack
-      run: docker-compose build
+      run: |
+        docker-compose build
+        docker-compose up -d
+      
       
     # - name: Test the application
     #   run: |
