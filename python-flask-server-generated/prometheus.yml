@@ -11,10 +11,10 @@ scrape_configs:
       - targets: ['victoriametrics:8428']
   - job_name: 'Playlist-api'
     static_configs:
-      - targets: [ '192.168.1.101:8080' ]  # Замените 'movies-api' на адрес вашего приложения, где запущен Movies API
+      - targets: [ '192.168.0.102:8080' ]  # Замените 'movies-api' на адрес вашего приложения, где запущен Movies API
   - job_name: 'loki'
     static_configs:
-      - targets: [ '192.168.1.101:3100' ]
+      - targets: [ '192.168.0.102:3100' ]
   - job_name: 'tempo'
     static_configs:
       - targets: [ 'tempo:9411' ]
