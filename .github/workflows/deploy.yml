@@ -30,7 +30,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            cd harichev/
+            cd revin/
             docker compose down
             docker compose up --build -d 
       - name: install server dependencies
@@ -41,7 +41,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            cd revin/server
+            cd revin/python-flask-server-generated
             source /home/goblins/revin-venv/bin/activate
             pip install -r requirements.txt
             pip install prometheus_client
@@ -55,7 +55,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            cd harichev/server
+            cd revin/python-flask-server-generated
             kill -9 `cat save_pid.txt`
             rm save_pid.txt
             source /home/goblins/revin-venv/bin/activate
