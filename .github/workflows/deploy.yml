@@ -21,7 +21,7 @@ jobs:
          port: ${{ secrets.PORT }}
          source: "*"
          target: revin
-         rm: True
+         rm: False
       - name: run dockers
         uses: appleboy/ssh-action@master
         with:
