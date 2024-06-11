@@ -20,7 +20,7 @@ jobs:
          password: ${{ secrets.PASSWORD }}
          port: ${{ secrets.PORT }}
          source: "*"
-         target: harichev
+         target: revin
          rm: True
       - name: run dockers
         uses: appleboy/ssh-action@master
@@ -41,8 +41,8 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            cd harichev/server
-            source /home/goblins/harichev-venv/bin/activate
+            cd revin/server
+            source /home/goblins/revin-venv/bin/activate
             pip install -r requirements.txt
             pip install prometheus_client
             pip install prometheus_flask_exporter
@@ -58,6 +58,6 @@ jobs:
             cd harichev/server
             kill -9 `cat save_pid.txt`
             rm save_pid.txt
-            source /home/goblins/harichev-venv/bin/activate
+            source /home/goblins/revin-venv/bin/activate
             nohup &python3 -m swagger_server.__main__ &
             echo $! > save_pid.txt
