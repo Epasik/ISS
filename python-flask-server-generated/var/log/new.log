@@ -1601,3 +1601,202 @@ INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a
  * Running on http://127.0.0.1:8080
  * Running on http://192.168.0.102:8080
 INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.102:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:23] "[35m[1mDELETE /playlists/51 HTTP/1.1[0m" 204 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:23] "GET /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:23] "PUT /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:23] "GET /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:23] "POST /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:23] "DELETE /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:23] "GET /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:23] "PUT /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:root:Added new playlist
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:23] "[35m[1mPOST /playlists HTTP/1.1[0m" 201 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:24] "[35m[1mDELETE /playlists/51 HTTP/1.1[0m" 204 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:24] "GET /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:24] "PUT /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:24] "GET /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:24] "POST /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:24] "DELETE /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:24] "GET /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:24] "PUT /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:root:Added new playlist
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:24] "[35m[1mPOST /playlists HTTP/1.1[0m" 201 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:28] "[35m[1mDELETE /playlists/51 HTTP/1.1[0m" 204 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:28] "GET /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:28] "PUT /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:28] "GET /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:28] "POST /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:28] "DELETE /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:28] "GET /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:28] "PUT /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:root:Added new playlist
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:51:28] "[35m[1mPOST /playlists HTTP/1.1[0m" 201 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:52:21] "[35m[1mDELETE /playlists/51 HTTP/1.1[0m" 204 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:52:21] "GET /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:52:21] "PUT /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:52:21] "GET /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:52:21] "POST /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:52:21] "DELETE /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:52:21] "GET /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:52:21] "PUT /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:root:Added new playlist
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:52:21] "[35m[1mPOST /playlists HTTP/1.1[0m" 201 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.102:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:54:56] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:54:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:54:59] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:54:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:55:02] "GET /playlists HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:55:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:55:04] "GET /playlists HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:55:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.102:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:42] "[35m[1mDELETE /playlists/51 HTTP/1.1[0m" 204 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:42] "GET /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:42] "PUT /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:42] "GET /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:42] "POST /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:42] "DELETE /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:42] "GET /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:42] "PUT /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:root:Added new playlist
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:42] "[35m[1mPOST /playlists HTTP/1.1[0m" 201 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:43] "[35m[1mDELETE /playlists/51 HTTP/1.1[0m" 204 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:43] "GET /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:43] "PUT /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:43] "GET /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:43] "POST /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:43] "DELETE /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:43] "GET /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:43] "PUT /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:root:Added new playlist
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:43] "[35m[1mPOST /playlists HTTP/1.1[0m" 201 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:44] "[35m[1mDELETE /playlists/51 HTTP/1.1[0m" 204 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:44] "GET /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:44] "PUT /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:44] "GET /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:44] "POST /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:44] "DELETE /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:44] "GET /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:44] "PUT /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:root:Added new playlist
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:44] "[35m[1mPOST /playlists HTTP/1.1[0m" 201 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:56] "GET /playlists HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:59] "GET /playlists/51 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:56:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:00] "GET /playlists/51 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:07] "[35m[1mDELETE /playlists/51 HTTP/1.1[0m" 204 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:07] "GET /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:07] "PUT /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:07] "GET /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:07] "POST /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:07] "DELETE /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:07] "GET /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:07] "PUT /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:root:Added new playlist
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:07] "[35m[1mPOST /playlists HTTP/1.1[0m" 201 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:08] "[35m[1mDELETE /playlists/51 HTTP/1.1[0m" 204 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:08] "GET /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:08] "PUT /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:08] "GET /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:08] "POST /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:08] "DELETE /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:08] "GET /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:08] "PUT /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:root:Added new playlist
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:08] "[35m[1mPOST /playlists HTTP/1.1[0m" 201 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:08] "[35m[1mDELETE /playlists/51 HTTP/1.1[0m" 204 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:08] "GET /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:08] "PUT /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:08] "GET /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:08] "POST /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:08] "DELETE /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:08] "GET /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:08] "PUT /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:root:Added new playlist
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:08] "[35m[1mPOST /playlists HTTP/1.1[0m" 201 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "[35m[1mDELETE /playlists/51 HTTP/1.1[0m" 204 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "GET /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "PUT /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "GET /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "POST /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "DELETE /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "GET /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "PUT /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:root:Added new playlist
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "[35m[1mPOST /playlists HTTP/1.1[0m" 201 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "[35m[1mDELETE /playlists/51 HTTP/1.1[0m" 204 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "GET /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "PUT /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "GET /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "POST /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "DELETE /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "GET /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "PUT /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:root:Added new playlist
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "[35m[1mPOST /playlists HTTP/1.1[0m" 201 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "[35m[1mDELETE /playlists/51 HTTP/1.1[0m" 204 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "GET /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "PUT /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "GET /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "POST /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "DELETE /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "GET /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "PUT /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:root:Added new playlist
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:09] "[35m[1mPOST /playlists HTTP/1.1[0m" 201 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "[35m[1mDELETE /playlists/51 HTTP/1.1[0m" 204 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "GET /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "PUT /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "GET /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "POST /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "DELETE /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "GET /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "PUT /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:root:Added new playlist
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "[35m[1mPOST /playlists HTTP/1.1[0m" 201 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "[35m[1mDELETE /playlists/51 HTTP/1.1[0m" 204 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "GET /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "PUT /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "GET /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "POST /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "DELETE /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "GET /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "PUT /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:root:Added new playlist
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "[35m[1mPOST /playlists HTTP/1.1[0m" 201 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "[35m[1mDELETE /playlists/51 HTTP/1.1[0m" 204 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "GET /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "PUT /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "GET /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "POST /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "DELETE /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "GET /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "PUT /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:root:Added new playlist
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:10] "[35m[1mPOST /playlists HTTP/1.1[0m" 201 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:12] "[35m[1mDELETE /playlists/51 HTTP/1.1[0m" 204 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:12] "GET /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:12] "PUT /playlists/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:12] "GET /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:12] "POST /playlists/56/tracks HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:12] "DELETE /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:12] "GET /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:12] "PUT /playlists/56/tracks/56 HTTP/1.1" 200 -
+INFO:root:Added new playlist
+INFO:werkzeug:192.168.0.102 - - [03/Jun/2024 13:57:12] "[35m[1mPOST /playlists HTTP/1.1[0m" 201 -
