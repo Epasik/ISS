@@ -1,0 +1,63 @@
+name: deploy  
+
+on:
+  push:
+    branches: [ master ] 
+  pull_request:
+    branches: [ master ]
+
+
+jobs: 
+  deploy:
+      runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@master
+      - name: copy code
+        uses: appleboy/scp-action@v0.1.7
+        with:
+         host: ${{ secrets.HOST }}
+         username: ${{ secrets.USERNAME }}
+         password: ${{ secrets.PASSWORD }}
+         port: ${{ secrets.PORT }}
+         source: "*"
+         target: harichev
+         rm: True
+      - name: run dockers
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: |
+            cd harichev/
+            docker compose down
+            docker compose up --build -d 
+      - name: install server dependencies
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: |
+            cd harichev/server
+            source /home/goblins/harichev-venv/bin/activate
+            pip install -r requirements.txt
+            pip install prometheus_client
+            pip install prometheus_flask_exporter
+        
+      - name: run Swagger
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: |
+            cd harichev/server
+            kill -9 `cat save_pid.txt`
+            rm save_pid.txt
+            source /home/goblins/harichev-venv/bin/activate
+            nohup &python3 -m swagger_server.__main__ &
+            echo $! > save_pid.txt
