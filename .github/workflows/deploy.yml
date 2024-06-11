@@ -31,7 +31,6 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd revin/
-            docker rm -f victoriametrics
             docker compose down
             docker compose up --build -d 
       - name: install server dependencies
